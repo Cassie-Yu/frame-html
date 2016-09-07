@@ -1,0 +1,33 @@
+@basecolor:#e7e8eb;//整个页面背景颜色
+@top_height:66px;//页面头部高度
+@top_basecolor:#363636;//页面头部背景颜色
+@content_width:1200px;//页面所有内容区域宽度
+@top_fontcolor:#eaeaea;//页面顶部字体颜色
+@logo_size:42px;//顶部logo尺寸
+@top_iconsize:22px;//顶部小图标尺寸
+@user_picturesize:40px;//顶部用户头像尺寸
+@user_pictureright:10px;//顶部用户图像右侧定位
+@top_iconmargin:20px;//顶部小图标间隙
+@weixin_size:96px;//二维码大小
+
+body{
+    background-color:@basecolor;
+    .content_container{
+        width:@content_width;
+        height:inherit;
+        margin:0 auto;
+        position:relative;
+    }
+    .top_container{
+    width:100%;
+    min-width:@content_width;
+    height:@top_height;
+    background-color:@top_basecolor;
+    line-height:@top_height;
+    color:@top_fontcolor;
+    }
+
+//顶部小图标样式
+.topicon{
+    font-size:@top_iconsize;
+}

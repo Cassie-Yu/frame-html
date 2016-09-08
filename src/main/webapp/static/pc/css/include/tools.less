@@ -1,0 +1,14 @@
+//定义透明度
+.opacity(@val1:x,@val2:y){
+	filter:alpha(opacity=@val1);
+	-moz-opacity:@val2; 
+	opacity: @val2;
+}
+
+// 定义过度效果的样式
+.transition{
+	transition: all 600ms ease;
+	-webkit-transition: all 600ms ease;
+	-moz-transition: all 600ms ease;
+}
+

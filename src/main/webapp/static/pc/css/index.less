@@ -1,0 +1,92 @@
+//页面重置样式引入
+@import url(./include/reset.less);
+//页面主题样式引入
+@import url(./include/theme.less);
+//页面公用样式引入
+@import url(./include/tools.less);
+
+html{
+    //overflow-x:hidden;
+}
+
+body{
+    .content_box{
+        width:@content_width;
+        height:100%;
+        margin:0 auto;
+    }
+    .top_nav{
+        width:100%;
+        min-width:@content_width;
+        height:@top_height;
+        line-height:@top_height;
+        background-color:@top_basecolor;
+        color:@top_fontcolor;
+        .top_left{
+            height:100%;
+            float:left;
+            vertical-align:bottom;
+            .logo{
+                font-size:@logo_size;
+            }
+            .title{
+                font-size:1.5em;
+                .opacity(@val1:60,@val2:0.6);
+                .transition;
+                cursor:pointer;
+                &:hover{
+                    .opacity(@val1:100,@val2:1);
+                }
+            }
+        }
+        .top_right{
+            height:100%;
+            float:right;
+            position:relative;
+            .icon{
+                font-size:@top_iconsize;
+                margin-right:15px;
+                position:relative;
+                .opacity(@val1:60,@val2:0.6);
+                .transition;
+                cursor:pointer;
+                &:hover{
+                    .opacity(@val1:100,@val2:1);
+                }
+            }
+            .dot{
+                display:inline-block;
+                width:@dot_size;
+                height:@dot_size;
+                border-radius:50%;
+                background-color:@top_fontcolor;
+                position:absolute;
+                top:@top_height/2-@top_iconsize/2;
+                right:@users_size+15+@dot_size+15+@top_iconsize+@top_iconsize/8;                    
+            }
+            .icon-class-weixin{
+                margin-right:@users_size+15+@dot_size;
+            }
+            .users{
+                display:inline-block;
+                width:@users_size;
+                height:@users_size;
+                border-radius:50%;
+                border:1px solod red;
+                background:url(../imgs/user.png);
+                background-size:contain;
+                position:absolute;
+                top:12px;
+                right:0;
+                float:right;
+            }
+        }
+    }
+}
+
+.popover .weixin_box{
+    width:@weixin_boxsize;
+    height:@weixin_boxsize;
+    background:url(../imgs/wechat_2d_barcode.jpg);
+    background-size:contain;
+}

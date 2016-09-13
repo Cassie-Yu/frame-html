@@ -33,7 +33,9 @@ public class JadeUtil {
 			return false;
 		
 		String ctx = ContextParameter.getContextPath();
+//		String ctx = "";
 		String staticCtx = ctx+"/static";
+		mv.addObject("ctx", ctx);
 		mv.addObject("staticCtx", staticCtx);
 		return true;
 	}

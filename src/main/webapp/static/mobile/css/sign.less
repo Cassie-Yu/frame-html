@@ -1,0 +1,127 @@
+@import url(../../../static/mobile/css/include/theme.less);
+@import url(../../../static/mobile/css/include/reset.less);
+
+.main{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    font-size:14px;
+    color:#666;
+    -webkit-font-smoothing: antialiased; 
+    .content{
+        width:90%;
+        height:100%;
+        margin:0 auto;
+        .logo{
+            width:@logo-size+30px;
+            height:@logo-size+30px;
+            margin:0 auto;
+            line-height:@logo-size+30px;
+            text-align:center;
+            .icon-logo{
+                font-size:150px;
+                color:#333;
+            }
+        }
+        .input-container{
+            width:100%;
+            padding:0 20px;
+            margin-top:5px;
+            .input-block{
+                width:100%;
+                margin-bottom:20px;
+                border-bottom:1px solid #ccc;
+                position:relative;
+                .input-box{
+                    width:100%;
+                    border:none;
+                    outline:none;
+                    height:@input-height;
+                    line-height:@input-height;
+                    &:-webkit-autofill {
+                        -webkit-box-shadow: 0 0 0px 1000px white inset; 
+                    } 
+                    &:focus{
+                        border:none;
+                        outline:none;
+                    }
+                }
+                .delete{
+                    color:#ccc;
+                    position:absolute;
+                    top:9px;
+                    right:10px;
+                }
+            }
+            .border{
+                border-bottom:1px solid #000;
+            }
+            .mobile-button{
+                margin:10px 0;
+                width:100%;
+            }
+        }
+        .tips{
+            width:100%;
+            text-align:center;
+        }
+        .footer-container{
+            width:90%;
+            height:18%;
+            position:absolute;
+            bottom:10%;
+            .footer-title{
+                width:100%;
+                height:@input-height;
+                line-height:@input-height;
+                border-bottom:1px solid #ccc;
+                .title-text{
+                    display:inline-block;
+                    width:36%;
+                    height:@input-height;
+                    line-height:@input-height;
+                    background-color:#fff;
+                    text-align:center;
+                    margin:@input-height/2 32%;
+                }
+            }
+            .weixin{
+                display:block;
+                border:1px solid #ccc;
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                line-height:50px;
+                margin:10% auto;
+                text-align:center;
+                .icon-wechat-dark{
+                    font-size:30px;
+                    color:#04b010;
+                }
+            }
+        }
+    }
+}
+
+.error-modal{
+    position:absolute;
+    top:35%;
+    width:150px;
+    height:80px;
+    background-color:rgba(0,0,0,0.8);
+    color:#fff;
+    border-radius:10px;
+    margin:0 auto;
+    text-align:center;
+    .error-content{
+        width:100%;
+        height:50px;
+        line-height:25px;
+        margin-top:15px;
+        .error-title{
+            font-size:1.5em;
+        }
+    }
+}

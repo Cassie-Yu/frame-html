@@ -23,6 +23,9 @@ a:visited {
 dl {
   margin-bottom: 0px;
 }
+label {
+  font-weight: 500;
+}
 .popover {
   padding: 0px;
   border-radius: 0px;
@@ -69,6 +72,32 @@ dl {
 .form-horizontal .form-group {
   margin-right: 0px;
   margin-left: 0px;
+}
+ul.messenger.messenger-fixed.messenger-on-top {
+  top: 60px;
+}
+ul.messenger-theme-air .messenger-message {
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 7px 1px #888888;
+  -moz-box-shadow: 0 0 7px 1px #888888;
+  box-shadow: 0 0 7px 1px #888888;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  margin-bottom: 1em;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+  padding: 13px 30px 13px 46px;
+}
+ul.messenger-theme-air .messenger-message .messenger-close {
+  padding: 13px 10px 7px 7px;
 }
 .col-lg-1,
 .col-lg-10,
@@ -133,11 +162,6 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #e7e7eb;
 }
-.transition {
-  transition: all 600ms ease;
-  -webkit-transition: all 600ms ease;
-  -moz-transition: all 600ms ease;
-}
 .light-color {
   color: #8d8d8d;
 }
@@ -145,6 +169,7 @@ body {
   transition: all 600ms ease;
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
   filter: alpha(opacity=60);
   /* ie 有效*/
   -moz-opacity: 0.6;
@@ -199,6 +224,7 @@ body {
   transition: all 600ms ease;
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
 }
 .beaut-form-box .active {
   margin-top: -20px;
@@ -224,67 +250,58 @@ body {
 .has-error .error-msg-label {
   color: #e53a40;
 }
-.viewFramework-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 150px;
-  width: 100%;
-  background-color: #fff;
+.page-title {
+  font-size: 16px;
+  padding: 0px 30px;
+  margin: 0px;
+  line-height: 70px;
 }
-.viewFramework-footer .sign-footer-cont {
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  line-height: 150px;
+.page-second-title-content {
+  border-bottom: solid #e7e7eb 1px;
+}
+.page-second-title-content .tab-navs {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
   text-align: center;
-  background-color: #fafafa;
-  color: #999;
+  line-height: 40px;
+  margin-bottom: -1px;
 }
-.sign-body-cont {
-  height: 100%;
-  background: url("../../imgs/page_bg.png") no-repeat;
-  background-size: cover;
+.page-second-title-content .tab-navs .tab-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table-cell;
 }
-.pre-button {
+.page-second-title-content .tab-navs .tab-nav a {
+  padding: 0 18px;
   display: block;
-  font-size: 14px;
-  background-color: #31a9e8;
+}
+.page-second-title-content .tab-navs .tab-nav a:first-child {
+  padding-left: 30px;
+}
+.page-second-title-content .tab-navs .tab-nav:hover {
+  border-bottom: solid #d9dadc 3px;
+}
+.page-second-title-content .tab-navs .checked {
+  border-bottom: solid #363636 3px;
+}
+.page-second-title-content .tab-navs .checked:hover {
+  border-bottom: solid #363636 3px;
+}
+.page-third-title {
   height: 35px;
+  line-height: 35px;
+  background-color: #f4f5f9;
+  padding: 0 0 0 20px;
+  border-bottom: solid #e7e7eb 1px;
 }
-.sign-form {
-  height: 100%;
-  position: absolute;
+.move-box-start {
   background-color: #fff;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  margin: 0 -15px;
-  padding: 0 15px;
-  z-index: 10;
-}
-.sign-form .form-title,
-.sign-form .mail-pic {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-}
-.sign-container {
-  position: relative;
-  top: 15%;
-  margin: 0 auto;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  z-index: 10;
-}
-.sign-container .signin-form {
-  width: 314px;
-  height: 100%;
-  right: 15px;
-  border: none;
-}
-.sign-container .mail-form {
-  width: 100%;
+  border: solid #e7e7eb 1px;
+  -webkit-box-shadow: 0 0 7px 1px #888888;
+  -moz-box-shadow: 0 0 7px 1px #888888;
+  box-shadow: 0 0 7px 1px #888888;
 }
 .viewFramework-topbar,
 .viewFramework-body,
@@ -504,8 +521,7 @@ body {
   width: 990px;
 }
 .viewFramework-footer {
-  background-color: #b8b9b9;
-  position: relative;
+  background-color: #363636;
 }
 .viewFramework-footer .view-footer-cont {
   width: 1200px;

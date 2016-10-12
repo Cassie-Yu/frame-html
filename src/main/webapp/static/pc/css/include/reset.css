@@ -156,138 +156,146 @@ body {
   -moz-box-shadow: 0 0 7px 1px #888888;
   box-shadow: 0 0 7px 1px #888888;
 }
-body {
-  background-color: #ffffff;
+/**
+ * 用于重写bootstrap
+ * 原始标签样式的文件
+ */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  color: #666666;
+  text-decoration: none;
+  cursor: pointer;
 }
-.viewFramework-topbar {
-  color: #fff;
+dl {
+  margin-bottom: 0px;
 }
-.viewFramework-topbar .signin-up-msg {
-  display: inline-block;
-  padding: 25px 0;
-  float: right;
+label {
+  font-weight: 500;
 }
-.viewFramework-topbar .signin-up-msg .to-signin {
-  color: #31a9e8;
+.popover {
+  padding: 0px;
+  border-radius: 0px;
+  max-width: 600px;
 }
-.viewFramework-body-sign {
-  position: absolute;
-  top: 66px;
-  bottom: 100px;
-  width: 100%;
-  min-width: 1200px;
+.popover-content {
+  padding: 0px 0px;
 }
-.viewFramework-body-sign .sign-content-box {
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
+.form-control {
+  border-radius: 0px;
 }
-.viewFramework-body-sign .sign-content-box .left-pic {
-  position: absolute;
-  top: 15%;
-  left: 150px;
-  z-index: 10;
+.form-control:focus {
+  border: solid #666 1px;
+  -webkit-box-shadow: 0 0 7px 1px #888888;
+  -moz-box-shadow: 0 0 7px 1px #888888;
+  box-shadow: 0 0 7px 1px #888888;
 }
-.viewFramework-body-sign .sign-content-box .right-form {
-  width: 314px;
-  height: 294px;
-  top: 22%;
-  right: 200px;
+.has-error .form-control {
+  border-color: #e53a40;
 }
-.viewFramework-body-sign .sign-content-box .sure-button {
-  width: 284px;
+.has-error .form-control:focus {
+  border: solid #e53a40 1px;
+  -webkit-box-shadow: 0px 0px 4px 1px #ff7473;
+  -moz-box-shadow: 0px 0px 4px 1px #ff7473;
+  box-shadow: 0px 0px 4px 1px #ff7473;
 }
-.viewFramework-body-sign .sign-content-box .signin-form-container {
-  width: 636px;
-  height: 358px;
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label {
+  color: #e53a40;
 }
-.viewFramework-body-sign .sign-content-box .signin-form-container img {
-  height: 100%;
-  float: left;
-  border-radius: 5px 0 0 5px;
+.form-group {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
-.viewFramework-body-sign .sign-content-box .mail-check-container {
-  width: 586px;
-  height: 290px;
+.form-horizontal .form-group {
+  margin-right: 0px;
+  margin-left: 0px;
 }
-.viewFramework-body-sign .sign-content-box .mail-check-container .mail-pic {
-  height: 150px;
-  line-height: 140px;
+ul.messenger.messenger-fixed.messenger-on-top {
+  top: 60px;
 }
-.viewFramework-body-sign .sign-content-box .mail-check-container .mail-pic i {
-  font-size: 90px;
-  filter: alpha(opacity=80);
-  /* ie 有效*/
-  -moz-opacity: 0.8;
-  /* Firefox  有效*/
-  opacity: 0.8;
-  /* 通用，其他浏览器  有效*/
-}
-.viewFramework-body-sign .sign-content-box .mail-check-container .mail-button {
-  margin: 0 auto;
-  display: block;
-}
-.viewFramework-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100px;
-  width: 100%;
-  background-color: #fff;
-}
-.viewFramework-footer .sign-footer-cont {
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  line-height: 100px;
-  text-align: center;
-  background-color: #fafafa;
-  color: #999;
-}
-.sign-body-cont {
-  height: 100%;
-  background: url("../../imgs/page_bg.png") no-repeat;
-  background-size: cover;
-}
-.pre-button {
-  display: block;
-  font-size: 14px;
-  background-color: #31a9e8;
-  height: 35px;
-  line-height: 35px;
-}
-.sign-form {
-  height: 100%;
-  position: absolute;
-  background-color: #fff;
-  border: 1px solid #d9d9d9;
+ul.messenger-theme-air .messenger-message {
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin: 0 -15px;
-  padding: 0 15px;
-  z-index: 10;
-}
-.sign-form .form-title,
-.sign-form .mail-pic {
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-}
-.sign-container {
+  -webkit-box-shadow: 0 0 7px 1px #888888;
+  -moz-box-shadow: 0 0 7px 1px #888888;
+  box-shadow: 0 0 7px 1px #888888;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
   position: relative;
-  top: 15%;
-  margin: 0 auto;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  z-index: 10;
+  margin-bottom: 1em;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+  padding: 13px 30px 13px 46px;
 }
-.sign-container .signin-form {
-  width: 314px;
-  height: 100%;
-  right: 15px;
-  border: none;
+ul.messenger-theme-air .messenger-message .messenger-close {
+  padding: 13px 10px 7px 7px;
 }
-.sign-container .mail-form {
-  width: 100%;
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  padding-right: 0px;
+  padding-left: 0px;
 }

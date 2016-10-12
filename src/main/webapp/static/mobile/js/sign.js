@@ -2,6 +2,7 @@ $(function(){
     sign.input();//输入框焦点获失时样式变化
     sign.deleteIcon();//输入框清空按钮的变化及相关操作
     sign.verify();//表单验证及提交按钮的样式变化
+    sign.errortext();//错误提示框内容变化
 })
 
 var sign = new Object();
@@ -45,15 +46,24 @@ sign.verify = function(){
     })
 }
 
-//执行登录操作
+//登录错误
 sign.signerror = function(){
     $('#sign-error').modal();
-    setTimeout("$('#sign-error').modal('hide')",2000); 
+    setTimeout("$('#sign-error').modal('hide')",2000);
 }
 
+sign.errortext = function(){
+    $(document).on('click','[data-signin-button="signin"]',function(){
+        $('#sign-error .error-text').html('用户名或密码错误');
+    })
+    $(document).on('click','[data-signup-button="signup"]',function(){
+        $('#sign-error .error-text').html('此用户名已存在');
+    })
+}
 
-
-
-
+//确认操作
+$(document).on('click','[data-sure-button="sure"]',function(){
+    $('#sure-tips').modal();
+})
 
 

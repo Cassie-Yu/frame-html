@@ -14,7 +14,7 @@ $(function(){
     imenu.openMenuModal();
 
     // 加入栏目添加/编辑的模态框表单校验
-    vd.init("menu_modal_form", 1, 1);
+    vd.init("menu_modal_form", 2, 1);
 });
 
 imenu.clickMenu = function(){

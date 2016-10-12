@@ -4,9 +4,10 @@
 var sign = new Object();
 
 $(function() {
-	vd.init("signin_form", 2, 1);
-	vd.init("signup_form", 2, 1);
+	vd.init("signin-form", 2, 1);
+	vd.init("signup-form", 2, 1);
 	vd.init("verify_email_form", 2, 1);
+    iform.listenerFormControl();
 
 
 	// console.log(document.getElementById("userName"));

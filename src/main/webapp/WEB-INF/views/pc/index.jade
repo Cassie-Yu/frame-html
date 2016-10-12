@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		title 主控制模板
+
+		include ./common/static/style.jade
+		include ./common/static/script.jade
+
+
+	body
+		//- 头部页面块
+		.viewFramework-topbar
+			include ./common/includes/topbar.jade
+
+		//- body部分页面块
+		.viewFramework-body
+			.view-body-cont
+				//- 栏目部分页面块
+				.view-sidebar-cont
+					include ./common/includes/sidebar.jade
+				//- 主显示区域页面块
+				#product_main_body.view-product-body
+					//- include ../demo/testValidate.jade
+					//- include ./system/menu/au_list.jade
+
+		//- 脚部页面块
+		.viewFramework-footer
+			include ./common/includes/footer.jade
+
+
+		include ./common/includes/modals.jade

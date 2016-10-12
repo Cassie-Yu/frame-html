@@ -7,7 +7,7 @@
 @signin-form-width:636px;//用户注册输入区域宽度
 @signin-form-height:358px;//用户注册输入区域高度
 @mail-form-width:586px;//邮箱验证输入区域宽度
-@mail-form-height:290px;//邮箱验证输入区域高度
+@mail-form-height:320px;//邮箱验证输入区域高度
 
 body{
     background-color:@body-bg-color;
@@ -61,12 +61,31 @@ body{
                 border-radius:5px 0 0 5px;
             }
         }
+    }    
+}
+
+.viewFramework-body-mail{
+    position:absolute;
+    top:@top-height;
+    bottom:@sign-footer-height;
+    width:100%;
+    min-width:@base-width;
+    .sign-content-box{
+        width:@base-width;
+        height:100%;
+        margin:0 auto;
+        position:relative;
         .mail-check-container{
             width:@mail-form-width;
             height:@mail-form-height;
+            border:none;
+            .form-title{
+                padding-top:20px;
+             font-size:1.5em;   
+            }
             .mail-pic{
                 // margin:0 0 20px;
-                height: 150px;
+                height: 120px;
                 line-height: 140px;
                 i{
                     font-size: 90px;
@@ -78,8 +97,10 @@ body{
                 display:block;
             }                
         }
-    }    
+    }
 }
+
+
 //登录注册页面输入框样式统一定义
 
 //页面底部样式定义

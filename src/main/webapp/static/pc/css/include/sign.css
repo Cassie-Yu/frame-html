@@ -207,15 +207,33 @@ body {
   float: left;
   border-radius: 5px 0 0 5px;
 }
-.viewFramework-body-sign .sign-content-box .mail-check-container {
-  width: 586px;
-  height: 290px;
+.viewFramework-body-mail {
+  position: absolute;
+  top: 66px;
+  bottom: 100px;
+  width: 100%;
+  min-width: 1200px;
 }
-.viewFramework-body-sign .sign-content-box .mail-check-container .mail-pic {
-  height: 150px;
+.viewFramework-body-mail .sign-content-box {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.viewFramework-body-mail .sign-content-box .mail-check-container {
+  width: 586px;
+  height: 320px;
+  border: none;
+}
+.viewFramework-body-mail .sign-content-box .mail-check-container .form-title {
+  padding-top: 20px;
+  font-size: 1.5em;
+}
+.viewFramework-body-mail .sign-content-box .mail-check-container .mail-pic {
+  height: 120px;
   line-height: 140px;
 }
-.viewFramework-body-sign .sign-content-box .mail-check-container .mail-pic i {
+.viewFramework-body-mail .sign-content-box .mail-check-container .mail-pic i {
   font-size: 90px;
   filter: alpha(opacity=80);
   /* ie 有效*/
@@ -224,7 +242,7 @@ body {
   opacity: 0.8;
   /* 通用，其他浏览器  有效*/
 }
-.viewFramework-body-sign .sign-content-box .mail-check-container .mail-button {
+.viewFramework-body-mail .sign-content-box .mail-check-container .mail-button {
   margin: 0 auto;
   display: block;
 }
